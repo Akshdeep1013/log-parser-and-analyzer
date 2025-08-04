@@ -43,8 +43,8 @@ type HttpVersion struct {
 type SuccessInsight struct {
 	TotalSucceedRequest int
 	UniqueIPs           int
-	MostPageVisited     string
 	MostActiveIP        string
+	MostPageVisited     string
 	MaxResponseSize     int64
 	TotalResponseSize   int64
 }
@@ -52,7 +52,7 @@ type SuccessInsight struct {
 type FailureInsight struct {
 	TotalFailureRequest int
 	UniqueIPs           int
-	MostPageVisited     string
 	MostActiveIP        string
+	MostPageVisited     string
 	ErrorCode           map[int]int
 }

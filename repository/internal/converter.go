@@ -26,7 +26,7 @@ func ParseLogFile(data string) (*[]model.Log, error) {
 		matches := regex.FindStringSubmatch(row)
 
 		if len(matches) != 10 {
-			return nil, fmt.Errorf("Invalid log format at line i:%d", i)
+			return nil, fmt.Errorf("invalid log format at line i:%d", i)
 		}
 		statusCode, _ := strconv.Atoi(matches[8])
 		responseSize, _ := strconv.Atoi(matches[9])
