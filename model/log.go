@@ -5,7 +5,9 @@ package model
 // just a structure to store all rows one by one
 type Log struct {
 	IP           string
-	Timestamp    string
+	Date         string
+	Time         string
+	Timezone     string
 	HttpMethod   string
 	Page         string
 	HttpVersion  string
